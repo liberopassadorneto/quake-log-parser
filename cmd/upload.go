@@ -19,7 +19,7 @@ var uploadCmd = &cobra.Command{
 	Long: `Upload a log file and process it to generate a report in JSON format.
 
 Example usage:
-  quake upload --file /path/to/log/file.log --output saida.json
+  quake upload --file /path/to/log/file.log --output output.json
 
 Flags:
   -f, --file   Path to the log file to upload

@@ -45,7 +45,7 @@ This project is a CLI application to process Quake game log files and generate r
 
 1. Run the Docker container, mounting the necessary volumes to provide the log file and store the output file:
     ```bash
-    docker-compose run quake-parser upload --file /logs/qgames.log --output output.json
+    docker-compose run quake-parser upload --file /logs/test.log --output output.json
     ```
 
    In the command above:
@@ -70,7 +70,7 @@ Here are the complete steps to set up, build, and run the project:
     ```bash
     mkdir report
     mkdir logs
-    # Place your qgames.log file in ./logs
+    # Place your test.log file in ./logs
     ```
 
 3. Build the Docker image:
@@ -84,3 +84,9 @@ Here are the complete steps to set up, build, and run the project:
     ```
 
    The resulting JSON will be saved in `./report/output.json`.
+
+## Testing
+
+To run all the unit tests in the project, navigate to the root directory of the project and execute the following command:
+```bash
+go test -v ./...
