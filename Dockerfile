@@ -10,11 +10,11 @@ RUN mkdir -p /tmp
 
 COPY . .
 
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o quake-parser .
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o quake .
 
 FROM scratch
 
-COPY --from=builder /app/quake-parser /quake-parser
+COPY --from=builder /app/quake /quake
 
 COPY --from=builder /app/report /report
 
