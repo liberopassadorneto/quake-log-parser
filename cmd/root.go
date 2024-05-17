@@ -10,7 +10,6 @@ var rootCmd = &cobra.Command{
 	Long:  `A command line application to process Quake log files and generate reports in JSON format.`,
 }
 
-// Execute runs the root command.
 func Execute() error {
 	return rootCmd.Execute()
 }

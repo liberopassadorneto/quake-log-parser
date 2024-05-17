@@ -2,12 +2,11 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/liberopassadorneto/quake-log-parser/handler"
-	"github.com/liberopassadorneto/quake-log-parser/logger"
+	"github.com/liberopassadorneto/quake/handler"
+	"github.com/liberopassadorneto/quake/logger"
+	"github.com/spf13/cobra"
 	"io/ioutil"
 	"path/filepath"
-
-	"github.com/spf13/cobra"
 )
 
 var uploadFilePath string

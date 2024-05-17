@@ -3,8 +3,8 @@ package handler
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/liberopassadorneto/quake-log-parser/logger"
-	"github.com/liberopassadorneto/quake-log-parser/parser"
+	"github.com/liberopassadorneto/quake/logger"
+	"github.com/liberopassadorneto/quake/parser"
 	"io"
 	"net/http"
 	"os"
@@ -13,12 +13,10 @@ import (
 	"strings"
 )
 
-// Handler struct holds a pointer to a parser.
 type Handler struct {
 	parser *parser.Parser
 }
 
-// NewHandler returns a pointer to a Handler struct.
 func NewHandler() *Handler {
 	return &Handler{
 		parser: parser.NewParser(),
@@ -33,7 +31,7 @@ func (h *Handler) UploadFile(filePath string) ([]byte, error) {
 	}
 	defer file.Close()
 
-	buffer := make([]byte, 512) // 512 bytes should be enough for most formats
+	buffer := make([]byte, 512)
 	_, err = file.Read(buffer)
 	if err != nil && err != io.EOF {
 		return nil, fmt.Errorf("failed to read file: %w", err)

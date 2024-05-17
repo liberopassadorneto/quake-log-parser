@@ -3,8 +3,8 @@ package parser
 import (
 	"bufio"
 	"fmt"
-	"github.com/liberopassadorneto/quake-log-parser/logger"
-	"github.com/liberopassadorneto/quake-log-parser/models"
+	"github.com/liberopassadorneto/quake/logger"
+	"github.com/liberopassadorneto/quake/models"
 	"os"
 	"regexp"
 	"sort"
@@ -25,7 +25,10 @@ func (p *Parser) ParseLog(filePath string) ([]*models.Game, error) {
 		return nil, err
 	}
 
+	// Channel for collectGames
 	gamesChannel := make(chan *models.Game, len(chunks))
+
+	// Channel to send chunks to workers
 	taskChannel := make(chan chunkTask, len(chunks))
 
 	var wg sync.WaitGroup

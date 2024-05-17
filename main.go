@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/liberopassadorneto/quake-log-parser/cmd"
-	"github.com/liberopassadorneto/quake-log-parser/logger"
+	"github.com/liberopassadorneto/quake/cmd"
+	"github.com/liberopassadorneto/quake/logger"
 	"os"
 )
 

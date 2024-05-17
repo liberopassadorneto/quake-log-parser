@@ -1,7 +1,7 @@
 package parser
 
 import (
-	"github.com/liberopassadorneto/quake-log-parser/models"
+	"github.com/liberopassadorneto/quake/models"
 	"testing"
 )
 
@@ -43,7 +43,6 @@ func TestParseChunk(t *testing.T) {
 		t.Fatalf("Expected game number %v, but got: %v", expectedGame.GameNumber, game.GameNumber)
 	}
 
-	// Additional checks as needed
 	if len(game.Players) != len(expectedGame.Players) {
 		t.Fatalf("Expected number of players %v, but got: %v", len(expectedGame.Players), len(game.Players))
 	}

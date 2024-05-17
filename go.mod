@@ -1,4 +1,4 @@
-module github.com/liberopassadorneto/quake-log-parser
+module github.com/liberopassadorneto/quake
 
 go 1.22.1
 

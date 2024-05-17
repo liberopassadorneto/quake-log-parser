@@ -1,9 +1,9 @@
 version: '3.8'
 
 services:
-  quake-parser:
+  quake:
     build: .
     volumes:
       - ./logs:/logs
       - ./report:/report
-    entrypoint: ["/quake-parser"]
+    entrypoint: ["/quake"]
