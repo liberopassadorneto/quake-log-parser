@@ -3,8 +3,8 @@ package parser
 import (
 	"bufio"
 	"fmt"
-	"github.com/liberopassadorneto/quake/logger"
-	"github.com/liberopassadorneto/quake/models"
+	"github.com/liberopassadorneto/quake-parser/logger"
+	"github.com/liberopassadorneto/quake-parser/models"
 	"os"
 	"regexp"
 	"sort"

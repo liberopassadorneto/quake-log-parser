@@ -2,8 +2,8 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/liberopassadorneto/quake/handler"
-	"github.com/liberopassadorneto/quake/logger"
+	"github.com/liberopassadorneto/quake-parser/handler"
+	"github.com/liberopassadorneto/quake-parser/logger"
 	"github.com/spf13/cobra"
 	"io/ioutil"
 	"path/filepath"

@@ -3,8 +3,8 @@ package handler
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/liberopassadorneto/quake/logger"
-	"github.com/liberopassadorneto/quake/parser"
+	"github.com/liberopassadorneto/quake-parser/logger"
+	"github.com/liberopassadorneto/quake-parser/parser"
 	"io"
 	"net/http"
 	"os"

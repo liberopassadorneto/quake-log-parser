@@ -32,7 +32,7 @@ This project is a CLI application to process Quake game log files and generate r
 
 1. Clone the repository to your local environment:
     ```bash
-    git clone https://github.com/liberopassadorneto/quake.git
+    git clone https://github.com/liberopassadorneto/quake-parser.git
     cd quake
     ```
 
@@ -62,7 +62,7 @@ Here are the complete steps to set up, build, and run the project:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/liberopassadorneto/quake.git
+    git clone https://github.com/liberopassadorneto/quake-parser.git
     cd quake
     ```
 

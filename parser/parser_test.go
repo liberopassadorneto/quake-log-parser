@@ -1,7 +1,7 @@
 package parser
 
 import (
-	"github.com/liberopassadorneto/quake/models"
+	"github.com/liberopassadorneto/quake-parser/models"
 	"testing"
 )
 
