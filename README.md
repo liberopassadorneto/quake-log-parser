@@ -33,7 +33,7 @@ This project is a CLI application to process Quake game log files and generate r
 1. Clone the repository to your local environment:
     ```bash
     git clone https://github.com/liberopassadorneto/quake-parser.git
-    cd quake
+    cd quake-parser
     ```
 
 2. Run the following command to build the Docker image:
@@ -63,7 +63,7 @@ Here are the complete steps to set up, build, and run the project:
 1. Clone the repository:
     ```bash
     git clone https://github.com/liberopassadorneto/quake-parser.git
-    cd quake
+    cd quake-parser
     ```
 
 2. Create the directories and place the log file in the `logs` directory (if necessary):
